@@ -4,7 +4,8 @@
 %%%%% Last change March 2021 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 How to use the code
-1) put all experimental files in the data folder. these are excel files 
+1) create a folder code and put all the programs there
+1) create a folder data and put all experimental files in that folder. these are excel files 
 with some format constraints: i) data is on columns starting from E3 ending 
 before CE700 (if these constraints are not true change Read_data.m) ii) pay attention
 to the Windows language when using . or , for decimals in the excel file
