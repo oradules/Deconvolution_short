@@ -97,8 +97,6 @@ Nbr_poly_estimate = min([round( sum(DataExpSmooth) / area ),num_possible_poly]);
 
 generations=400; %%%% number of generation in the GA step
 
-generations = 10;
-
 x_GA_art = optimize_ga1_par(DataExpSmooth,Nbr_poly_estimate,num_possible_poly,FreqEchSimu, FreqEchImg, TaillePreMarq, ...
             TailleSeqMarq, TaillePostMarq,  Polym_speed, frame_num, Intensity_for_1_Polym, generations);
      
