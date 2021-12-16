@@ -27,3 +27,19 @@ of execution time
 Use the pooled option if you want to pool all the data files, otherwise
 files are analysed separately. For this version pooling is all or none.  
 It generates  a folder Results3 containing the results of the fit.
+
+How to use the python version
+1) create a folder 'code' and put all the scripts there
+2) modify the path in the code line: sys.path.append('/home/mdouaihy/temporary/deconv_python/') (-- mention which file has this line.) to the path of the folder containing the folder 'code'
+3) create a folder for data and put all experimental files in that folder.
+These are excel files with some format constraints:
+	i) data is on columns starting from E3 ending  before CE700 (if these constraints are not true change readDrosoData.py)
+	ii) the experimental data file should be in an .xlsx format.
+	iii) the intensity data corresponding to the same gene should be stored by either putting all of data files in the same folder or one excel sheet for the gene.
+4) When you run the second part of the notebook it will output the numbers of threads on your PC. Be careful to use not more than half the total number of threads when running parrallel computing for deconvolution.
+5) Assign the path corresponding to the folder containing your data to the variable 'DataFilePath'
+6) Assign the path corresponding to the folder that you want your results to be stored in to the variable 'outputFolder'
+7) change combined to correspond to the way you stored your excel files.
+	If you have stored all of the excel files corresponding to the same gene in the folder then set combined equal to 1.
+	else use combined=0.
+  Make sure you change the parameters corresponding the gene (MS2 structure, time resolution...) in the file (...)
